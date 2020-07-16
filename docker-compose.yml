@@ -30,7 +30,7 @@ services:
     environment:
       - TZ=${TZ}    
   db:
-    image: mysql:5.7.31
+    image: mysql:8.0.21
     volumes:
       - db-store:/var/lib/mysql
       - ./logs:/var/log/mysql

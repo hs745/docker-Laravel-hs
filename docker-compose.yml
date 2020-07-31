@@ -22,7 +22,7 @@ services:
     depends_on:
       - app
     ports:
-      - 10081:81
+      - 10080:80
     volumes:
       - ./src:/work
       - ./logs:/var/log/nginx
@@ -42,6 +42,6 @@ services:
       - MYSQL_ROOT_PASSWORD=${DB_PASS}
       - TZ=${TZ}
     ports:
-      - 13307:3307
+      - 13306:3306
 volumes:
   db-store:
